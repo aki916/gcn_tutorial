@@ -323,6 +323,7 @@ for e in range(100):
     pos_score = pred(train_pos_g, h)
     neg_score = pred(train_neg_g, h)
     loss = compute_loss(pos_score, neg_score)
+    breakpoint()
     
     # backward
     optimizer.zero_grad()
